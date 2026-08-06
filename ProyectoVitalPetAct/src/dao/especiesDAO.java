@@ -42,20 +42,23 @@ public class especiesDAO {
 
     // Listar Especies
     
+   // Listar Especies
     public List<especies> ListarEspecies() {
         List<especies> lista = new ArrayList<>();
-        // Ajusta los nombres de columnas según tu DB en phpMyAdmin (ej: fk_id_especies o id_especies)
         String sql = "SELECT * FROM especies"; 
         try {
             con = cn.getConnection();
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()) {
-    especies e = new especies();
-    e.setIdEsp(rs.getInt("id_especie")); // O rs.getInt("id_esp") o la columna 1: rs.getInt(1)
-    e.setNombreEsp(rs.getString("nombre_especie"));
-    lista.add(e);
-}
+                especies e = new especies();
+                e.setIdEsp(rs.getInt("id_especie")); 
+                e.setNombreEsp(rs.getString("nombre_especie"));
+                // ¡AQUÍ ESTABA EL DETALLE! Agrega esta línea para traer la descripción:
+                e.setDescripcionEsp(rs.getString("descripcion_especie"));
+                
+                lista.add(e);
+            }
         } catch (Exception ex) {
             System.out.println("Error al listar especies: " + ex.toString());
         }
