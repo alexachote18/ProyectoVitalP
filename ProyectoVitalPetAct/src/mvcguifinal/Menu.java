@@ -4,6 +4,7 @@
  */
 package mvcguifinal;
 
+import controller.ventasController;
 import javax.swing.JOptionPane;
 
 /**
@@ -249,6 +250,9 @@ public class Menu extends javax.swing.JFrame {
 
     private void btnHistorialVentas3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHistorialVentas3ActionPerformed
         // TODO add your handling code here:
+        ventasController ventas = new ventasController();
+        ventas.ListarVentas();
+        
     }//GEN-LAST:event_btnHistorialVentas3ActionPerformed
 
     /**
