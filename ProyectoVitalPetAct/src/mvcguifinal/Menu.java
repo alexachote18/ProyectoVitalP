@@ -250,9 +250,9 @@ public class Menu extends javax.swing.JFrame {
 
     private void btnHistorialVentas3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHistorialVentas3ActionPerformed
         // TODO add your handling code here:
-        ventasController ventas = new ventasController();
-        ventas.ListarVentas();
-        
+        menu_ventas ingresar = new menu_ventas();
+        ingresar.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnHistorialVentas3ActionPerformed
 
     /**
