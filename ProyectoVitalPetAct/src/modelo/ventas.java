@@ -2,7 +2,7 @@ package modelo;
 
 /**
  *
- * isa
+ * isacjnkajhd
  */
 public class ventas {
     private int idVenta;
