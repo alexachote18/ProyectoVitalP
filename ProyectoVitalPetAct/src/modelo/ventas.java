@@ -18,7 +18,7 @@ public class ventas {
         this.fechaVenta = fechaVenta;
         this.totalVenta = totalVenta;
         this.formaPago = formaPago;
-        this.idCliente = idCliente; // Agregado
+        this.idCliente = idCliente; // Agregado en el archivo
     }
 
     public void setIdVenta(int idVenta) {
