@@ -2,7 +2,7 @@ package modelo;
 
 /**
  *
- * @author alexa
+ * isa
  */
 public class ventas {
     private int idVenta;
