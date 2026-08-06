@@ -139,7 +139,7 @@ public class Menu extends javax.swing.JFrame {
                         .addGroup(layout.createSequentialGroup()
                             .addGap(220, 220, 220)
                             .addComponent(btnCRUDProductos, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(183, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(158, 158, 158)
                 .addComponent(btnSalir)
